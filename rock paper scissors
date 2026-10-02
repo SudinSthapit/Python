@@ -1,0 +1,14 @@
+print("welcome to the game rock paper scissors")
+import random
+list1=["rock","paper","scissors"]
+computer_choice=random.choice(list1)
+print(computer_choice)
+
+user_choice=input("enter your choice").lower()
+if user_choice=="scissor" and computer_choice=="paper" or user_choice=="rock" and computer_choice=="scissor" or user_choice=="paper" or computer_choice=="rock":
+    print("user wins")
+if user_choice=="scissor" and computer_choice=="rock" or user_choice=="rock" or computer_choice=="paper" or user_choice=="paper" or computer_choice=="scissor":
+    print("computer wins")
+else:
+    print("the game is draw")
+

@@ -1,0 +1,21 @@
+print("welcome to tresure island your mission is to find the treasure")
+
+user_input=input("choose left or right").lower()
+if user_input=="left":
+    print("one round complete")
+
+    second_input = input("Choose wait or swim: ").lower() 
+
+if second_input=="wait":
+    print("second round complete")
+
+    third_input =input("choose red blue or yellow").lower()
+
+    if third_input=="yellow":
+        print("third round complete")
+    else:
+        print("you won the game and got teh tresure")
+else:
+        print("you died in second round you died")
+
+        print("Game over, Try again.")

@@ -1,0 +1,26 @@
+print("welcome to the number guessing game")
+
+import random
+computer_choice=random.randint(1,100)
+print(computer_choice)
+
+attemt=0
+while attemt < 6:
+    user_choice=int(input("enter your guess"))
+    attemt=attemt +1
+    print(f"your attemt is{attemt}")
+
+
+    if user_choice>computer_choice:
+        print("your guess is high")
+
+    elif user_choice<computer_choice:
+        print("your guess is lower")
+
+    else:
+        print("your guess is correct")
+        break
+
+if attemt==6:
+
+    print("you lose the game")
